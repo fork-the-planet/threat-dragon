@@ -68,7 +68,7 @@ the shared template gallery.
 
 ## Exporting an existing model as a template
 
-**Important** This feature is currently only available for web-based local sessions and GitHub authenticated 
+**Important** This feature is currently only available for web-based local sessions and GitHub authenticated
 sessions. Support for additional providers will be added in a future release.
 
 ![Export template image]({{ '/assets/images/export-template.png' | relative_url }}){: .float-right }
