@@ -206,7 +206,7 @@ for example `http://localhost:3000/`, but not in 'production' mode.
 __Note__ : the JWT refresh signing key should be different from the JWT signing key as they are different tokens.
 A JWT is used as the refresh token because it is tamper resistant and provides user context.
 
-### Remote environments
+### Remote repository environments
 
 Refer to the step by step guide pages for setting the environment variables specific for these technologies:
 
