@@ -1,14 +1,13 @@
-import i18n from '../../../../i18n';
 import cornucopiaEN from '@/service/schema/api_json/cornucopia-mobileapp-en.json';
 
 export default {
     id: 'cornucopia-mobileapp',
     name: 'OWASP Cornucopia Mobileapp',
 
-// mobileapp currently only provides English data via the Cornucopia API.
+    // mobileapp currently only provides English data via the Cornucopia API.
     getData() {
-    return cornucopiaEN;
-   },
+        return cornucopiaEN;
+    },
 
     getSuits() {
         const data = this.getData();
