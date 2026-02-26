@@ -86,11 +86,13 @@ Do this after logging into an active Docker account using `docker login` from th
 
 If the image tests correctly, promote the docker image from dockerhub `threatdragon/`
 to dockerhub `OWASP/threat-dragon/v2.6.0` and `OWASP/threat-dragon/v2.6.0-arm64`.
+Note that the docker account (eg `threatdragon`) must have write permissions to the OWASP area of docker hub.
 
 There is _no going back_ on these steps, so they are deliberately left as manual tasks:
 
 ```text
-docker tag owasp/threat-dragon:v2.6.0 owasp/threat-dragon:stable
+docker pull --platform linux/x86_64 threatdragon/owasp-threat-dragon:v2.6.0
+docker tag threatdragon/owasp-threat-dragon:v2.6.0 owasp/threat-dragon:stable
 docker push owasp/threat-dragon:stable
 docker pull owasp/threat-dragon:stable
 
